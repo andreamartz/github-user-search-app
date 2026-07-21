@@ -1,4 +1,111 @@
 @import "tailwindcss";
-@theme {
-  --font-mono: var(--font-space-mono);
+
+:root {
+  /* PRIMITIVE/REFERENCE TOKENS */
+  /* Sizes */
+  --size-0: 0rem;
+  --size-2: .125rem;   /* 2px */
+  --size-4: .25rem;    /* 4px */
+  --size-6: .375rem;   /* 6px */
+  --size-8: .5rem;     /* 8px */
+  --size-10: .625rem;  /* 10px */
+  --size-12: .75rem;   /* 12px */
+  --size-13: .8125rem;   /* 13px */
+  --size-15: .9375rem;   /* 15px */
+  --size-16: 1rem;       /* 16px */
+  --size-18: 1.125rem;   /* 18px */
+  --size-20: 1.25rem;    /* 20px */
+  --size-22: 1.375rem;   /* 22px */
+  --size-24: 1.5rem;     /* 24px */
+  --size-26: 1.625rem;   /* 26px */
+  --size-32: 2rem;      /* 32px */
+  --size-40: 2.5rem;      /* 40px */
+  --size-48: 3rem;      /* 48px */
+  --size-64: 4rem;      /* 64px */
+  --size-80: 5rem;      /* 80px */
+  --size-999: 62.4375rem;  /* 999px */
 }
+
+@theme {
+  --font-sans: var(--font-space-mono), ui-monospace, Consolas, monospace;
+
+  /* Presets */
+  --text-preset-1: var(--size-26);
+  --text-preset-1--line-height: 1.2;
+  --text-preset-1--font-weight: 700;
+  
+  --text-preset-2: var(--size-22);
+  --text-preset-2--line-height: 1.4;
+  --text-preset-2--font-weight: 700;
+
+  --text-preset-3-mobile: var(--size-13);
+  --text-preset-3-mobile--line-height: 1.4;
+  --text-preset-3-mobile--font-weight: 400;
+
+  --text-preset-3: var(--size-18);
+  --text-preset-3--line-height: 1.4;
+  --text-preset-3--font-weight: 400;
+
+  --text-preset-4: var(--size-16);
+  --text-preset-4--line-height: 1.5;
+  --text-preset-4--font-weight: 400;
+  
+  --text-preset-5: var(--size-16);
+  --text-preset-5--line-height: 1.5;
+  --text-preset-5--font-weight: 700;
+  
+  --text-preset-6: var(--size-15);
+  --text-preset-6--line-height: 1.5;
+  --text-preset-6--font-weight: 400;
+  
+  --text-preset-7: var(--size-13);
+  --text-preset-7--line-height: 1.5;
+  --text-preset-7--font-weight: 400;
+  
+  --text-preset-8: var(--size-13);
+  --text-preset-8--line-height: 1.4;
+  --text-preset-8--font-weight: 700;
+
+  /* Spacing */
+  --spacing-0: var(--size-0);
+  --spacing-025: var(--size-2);
+  --spacing-050: var(--size-4);
+  --spacing-075: var(--size-6);
+  --spacing-100: var(--size-8);
+  --spacing-125: var(--size-10);
+  --spacing-150: var(--size-12);
+  --spacing-200: var(--size-16);
+  --spacing-250: var(--size-20);
+  --spacing-300: var(--size-24);
+  --spacing-400: var(--size-32);
+  --spacing-500: var(--size-40);
+  --spacing-600: var(--size-48);
+  --spacing-800: var(--size-64);
+  --spacing-1000: var(--size-80);
+
+  /* Radius */
+  --radius-0: var(--size-0);
+  --radius-4: var(--size-4);
+  --radius-6: var(--size-6);
+  --radius-8: var(--size-8);
+  --radius-10: var(--size-10);
+  --radius-12: var(--size-12);
+  --radius-16: var(--size-16);
+  --radius-20: var(--size-20);
+  --radius-24: var(--size-24);
+  --radius-full: var(--size-999);
+
+  /* Colors */
+  --color-neutral-0: #ffffff;
+  --color-neutral-100: #f6f8ff;
+  --color-neutral-200: #90a4d4;
+  --color-neutral-300: #697c9a;
+  --color-neutral-500: #4b6a9b;
+  --color-neutral-700: #2b3442;
+  --color-neutral-800: #1e2a47;
+  --color-neutral-900: #141d2f;
+  --color-blue-300: #60abff;
+  --color-blue-500: #0079ff;
+  --color-red-500: #f74646;
+}
+
