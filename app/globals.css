@@ -76,6 +76,7 @@
   --spacing-150: var(--size-12);
   --spacing-200: var(--size-16);
   --spacing-250: var(--size-20);
+  --spacing-275: var(--size-22);
   --spacing-300: var(--size-24);
   --spacing-400: var(--size-32);
   --spacing-500: var(--size-40);
@@ -108,4 +109,3 @@
   --color-blue-500: #0079ff;
   --color-red-500: #f74646;
 }
-
