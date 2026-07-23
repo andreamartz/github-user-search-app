@@ -3,26 +3,29 @@
 :root {
   /* PRIMITIVE/REFERENCE TOKENS */
   /* Sizes */
+  --size-neg-10: -.625rem; /* -10px */
   --size-0: 0rem;
-  --size-2: .125rem;   /* 2px */
-  --size-4: .25rem;    /* 4px */
-  --size-6: .375rem;   /* 6px */
-  --size-8: .5rem;     /* 8px */
-  --size-10: .625rem;  /* 10px */
-  --size-12: .75rem;   /* 12px */
-  --size-13: .8125rem;   /* 13px */
-  --size-15: .9375rem;   /* 15px */
-  --size-16: 1rem;       /* 16px */
-  --size-18: 1.125rem;   /* 18px */
-  --size-20: 1.25rem;    /* 20px */
-  --size-22: 1.375rem;   /* 22px */
-  --size-24: 1.5rem;     /* 24px */
-  --size-26: 1.625rem;   /* 26px */
-  --size-32: 2rem;      /* 32px */
-  --size-40: 2.5rem;      /* 40px */
-  --size-48: 3rem;      /* 48px */
-  --size-64: 4rem;      /* 64px */
-  --size-80: 5rem;      /* 80px */
+  --size-2: .125rem;       /* 2px */
+  --size-4: .25rem;        /* 4px */
+  --size-6: .375rem;       /* 6px */
+  --size-8: .5rem;         /* 8px */
+  --size-10: .625rem;      /* 10px */
+  --size-12: .75rem;       /* 12px */
+  --size-13: .8125rem;     /* 13px */
+  --size-15: .9375rem;     /* 15px */
+  --size-16: 1rem;         /* 16px */
+  --size-18: 1.125rem;     /* 18px */
+  --size-20: 1.25rem;      /* 20px */
+  --size-22: 1.375rem;     /* 22px */
+  --size-24: 1.5rem;       /* 24px */
+  --size-25: 1.5625rem;    /* 25px */
+  --size-26: 1.625rem;     /* 26px */
+  --size-30: 1.875rem;     /* 30px */
+  --size-32: 2rem;         /* 32px */
+  --size-40: 2.5rem;       /* 40px */
+  --size-48: 3rem;         /* 48px */
+  --size-64: 4rem;         /* 64px */
+  --size-80: 5rem;         /* 80px */
   --size-999: 62.4375rem;  /* 999px */
 }
 
@@ -76,8 +79,8 @@
   --spacing-150: var(--size-12);
   --spacing-200: var(--size-16);
   --spacing-250: var(--size-20);
-  --spacing-275: var(--size-22);
   --spacing-300: var(--size-24);
+  --spacing-325: var(--size-25);
   --spacing-400: var(--size-32);
   --spacing-500: var(--size-40);
   --spacing-600: var(--size-48);
@@ -106,6 +109,10 @@
   --color-neutral-800: #1e2a47;
   --color-neutral-900: #141d2f;
   --color-blue-300: #60abff;
+  --color-shadow-blue-400: #4660bb33;
   --color-blue-500: #0079ff;
   --color-red-500: #f74646;
+
+  /* Shadow */
+  --shadow-all-500: 0 var(--size-16) var(--size-30) var(--size-neg-10) var(--color-shadow-blue-400);
 }
