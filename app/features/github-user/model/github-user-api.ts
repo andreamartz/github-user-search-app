@@ -1,0 +1,37 @@
+export type HttpUrl = `https://${string}` | `http://${string}`;
+
+export type GitHubApiGetAUserResponse = {
+  login: string;
+  id: number;
+  node_id: string;
+  avatar_url: HttpUrl;
+  gravatar_id: string | null;
+  url: HttpUrl;
+  html_url: HttpUrl;
+  followers_url: HttpUrl;
+  following_url: HttpUrl;
+  gists_url: HttpUrl;
+  starred_url: HttpUrl;
+  subscriptions_url: HttpUrl;
+  organizations_url: HttpUrl;
+  repos_url: HttpUrl;
+  events_url: HttpUrl;
+  received_events_url: HttpUrl;
+  type: string;
+  user_view_type: string;
+  site_admin: boolean;
+  name: string | null;
+  company: string | null;
+  blog: string | null;
+  location: string | null;
+  email: string | null;
+  hireable: boolean | null;
+  bio: string | null;
+  twitter_username: string | null;
+  public_repos: number;
+  public_gists: number;
+  followers: number;
+  following: number;
+  created_at: string;
+  updated_at: string;
+};
