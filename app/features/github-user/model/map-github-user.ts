@@ -25,7 +25,6 @@ export function mapGitHubUserDataToUI(
     username: user.login,
     avatarUrl: user.avatar_url,
     htmlUrl: user.html_url,
-    reposUrl: user.repos_url,
     name: user.name || `${user.login}`,
     company: user.company || NOT_AVAILABLE,
     blog: user.blog || NOT_AVAILABLE,

@@ -4,7 +4,6 @@ export type GitHubUserDataUI = {
   username: string;
   avatarUrl: HttpUrl;
   htmlUrl: HttpUrl;
-  reposUrl: HttpUrl;
   name: string;
   company: string;
   blog: string;
