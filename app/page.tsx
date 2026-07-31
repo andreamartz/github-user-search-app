@@ -4,6 +4,7 @@ import { useState } from 'react';
 import type { GitHubUserDataUI } from './features/github-user/model/github-user-ui';
 import SearchBar from './components/search-bar/SearchBar';
 import Profile from './components/profile/Profile';
+import Header from './components/header/Header';
 
 export default function Home() {
   const [ userInfo, setUserInfo ] = useState<GitHubUserDataUI>({
@@ -25,8 +26,9 @@ export default function Home() {
   const { avatarUrl, bio, blog, company, followers, following, htmlUrl, joinedAt, location, name, publicRepos, twitterUsername, username } = userInfo;
 
   return (
-    <div className="flex justify-center w-full min-h-screen pt-400 md:pt-500 bg-neutral-100">
+    <div className="flex justify-center w-full min-h-screen pt-400 md:pt-500">
       <div className="w-full max-w-3xl px-200 md:px-400">
+        <Header />
         <SearchBar />
         <Profile avatarUrl={avatarUrl} bio={bio} blog={blog} company={company} followers={followers} following={following} htmlUrl={htmlUrl} joinedAt={joinedAt} location={location} name={name} publicRepos={publicRepos} twitterUsername={twitterUsername} username={username} />
       </div>
